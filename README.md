@@ -8,3 +8,6 @@
 博客引擎: [Hexo(Website)](https://hexo.io/zh-cn/) [(Github)]()
 
 博客主题: [Material(Github)](https://github.com/viosey/hexo-theme-material)
+
+### 友情链接
+[Hueihuea的博客](https://mchhui.github.io/) - 一位很喜欢吃火锅底料的大执事
