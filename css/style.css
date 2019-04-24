@@ -677,8 +677,21 @@ a {
 #header .header-nav .social a.qq:hover {
   border: 1px solid #006b98;
 }
+#header .header-nav .social a.steam {
+  background: url("/img/steam.png") center no-repeat #000;
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  background-size: 90%;
+  border: 1px solid #fff;
+}
+#header .header-nav .social a.steam:hover {
+  border: 1px solid #006b98;
+}
 #header .header-nav .social a.bilibili {
   background: url("/img/bilibili.png") center no-repeat #ea86a6;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border: 1px solid #fff;
 }
 #header .header-nav .social a.bilibili:hover {
