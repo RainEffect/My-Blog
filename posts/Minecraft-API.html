@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>MineCraft相关 API/DOC/软件 | 漫步烟雨的个人博客</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MineCraft 插件官方API/教程DOC文档BukkitBukkit官网: https://bukkit.org/ Bukkit API(1.7.10 Latest): https://jd.bukkit.org/ - (PS: 官方文档是1.7.10最后的API，怎么回事。。。)Bukkit API: https://hub.spigotmc.org/javadocs/bukkit/ind">
+<meta name="keywords" content="MineCraft">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MineCraft相关 API&#x2F;DOC&#x2F;软件">
+<meta property="og:url" content="http://blog.mc-rain.cn/posts/Minecraft-API.html">
+<meta property="og:site_name" content="漫步烟雨的个人博客">
+<meta property="og:description" content="MineCraft 插件官方API/教程DOC文档BukkitBukkit官网: https://bukkit.org/ Bukkit API(1.7.10 Latest): https://jd.bukkit.org/ - (PS: 官方文档是1.7.10最后的API，怎么回事。。。)Bukkit API: https://hub.spigotmc.org/javadocs/bukkit/ind">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-24T23:09:03.881Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MineCraft相关 API&#x2F;DOC&#x2F;软件">
+<meta name="twitter:description" content="MineCraft 插件官方API/教程DOC文档BukkitBukkit官网: https://bukkit.org/ Bukkit API(1.7.10 Latest): https://jd.bukkit.org/ - (PS: 官方文档是1.7.10最后的API，怎么回事。。。)Bukkit API: https://hub.spigotmc.org/javadocs/bukkit/ind">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+</head></html>
+<body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()'>
+  <div class="nav-tip" style="opacity: 0;"></div>
+    
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/avatar.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">漫步烟雨</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">其实也只是条咸鱼罢了</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="http://mc-rain.cn/">个人主页</a></li>
+				        
+							<li><a href="/">博客主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="mail" target="_blank" href="mailto:i@mc-rain.cn" title="mail">mail</a>
+					        
+								<a class="github" target="_blank" href="https://github.com/RainEffect" title="github">github</a>
+					        
+								<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=494975707&site=qq&menu=yes" title="qq">qq</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/u/5344415373" title="weibo">weibo</a>
+					        
+								<a class="bilibili" target="_blank" href="https://space.bilibili.com/7665383" title="bilibili">bilibili</a>
+					        
+								<a class="mcbbs" target="_blank" href="http://www.mcbbs.net/?1429465" title="mcbbs">mcbbs</a>
+					        
+								<a class="steam" target="_blank" href="https://steamcommunity.com/id/_rain_effect_/" title="steam">steam</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/MineCraft/" style="font-size: 10px;">MineCraft</a> <a href="/tags/公告/" style="font-size: 10px;">公告</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://mchhui.github.io/">Hueihuea的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">漫步烟雨</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/avatar.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">漫步烟雨</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">其实也只是条咸鱼罢了</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="http://mc-rain.cn/">个人主页</a></li>
+		        
+					<li><a href="/">博客主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="mail" target="_blank" href="mailto:i@mc-rain.cn" title="mail">mail</a>
+			        
+						<a class="github" target="_blank" href="https://github.com/RainEffect" title="github">github</a>
+			        
+						<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=494975707&site=qq&menu=yes" title="qq">qq</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/u/5344415373" title="weibo">weibo</a>
+			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/7665383" title="bilibili">bilibili</a>
+			        
+						<a class="mcbbs" target="_blank" href="http://www.mcbbs.net/?1429465" title="mcbbs">mcbbs</a>
+			        
+						<a class="steam" target="_blank" href="https://steamcommunity.com/id/_rain_effect_/" title="steam">steam</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Minecraft-API" class="article article-type-post" itemscope itemprop="blogPost">
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MineCraft相关 API/DOC/软件
+      
+    </h1>
+  
+
+      </header>
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MineCraft/">MineCraft</a></li></ul>
+	</div>
+
+        
+
+        
+      </div>
+    
+    
+      <div class="article-entry" itemprop="articleBody">
+        <h1 id="MineCraft-插件"><a href="#MineCraft-插件" class="headerlink" title="MineCraft 插件"></a>MineCraft 插件</h1><h2 id="官方API-教程DOC文档"><a href="#官方API-教程DOC文档" class="headerlink" title="官方API/教程DOC文档"></a>官方API/教程DOC文档</h2><h3 id="Bukkit"><a href="#Bukkit" class="headerlink" title="Bukkit"></a>Bukkit</h3><p>Bukkit官网: <a href="https://bukkit.org/" target="_blank" rel="noopener">https://bukkit.org/</a></p>
+<p>Bukkit API(1.7.10 Latest): <a href="https://jd.bukkit.org/" target="_blank" rel="noopener">https://jd.bukkit.org/</a> - (PS: 官方文档是1.7.10最后的API，怎么回事。。。)<br>Bukkit API: <a href="https://hub.spigotmc.org/javadocs/bukkit/index.html?overview-summary.html" target="_blank" rel="noopener">https://hub.spigotmc.org/javadocs/bukkit/index.html?overview-summary.html</a></p>
+<p>Bukkit API(非官方中文文档): <a href="https://bukkit.windit.net/javadoc/" target="_blank" rel="noopener">https://bukkit.windit.net/javadoc/</a><br>Bukkit 非官方DOC: <a href="http://mineplugin.org/Bukkit/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%95%99%E7%A8%8B" target="_blank" rel="noopener">http://mineplugin.org/Bukkit/%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%95%99%E7%A8%8B</a></p>
+<h3 id="Spigot"><a href="#Spigot" class="headerlink" title="Spigot"></a>Spigot</h3><p>Spigot官网: <a href="http://spigotmc.org/" target="_blank" rel="noopener">http://spigotmc.org/</a></p>
+<p>Spigot API: <a href="https://hub.spigotmc.org/javadocs/spigot/index.html?overview-summary.html" target="_blank" rel="noopener">https://hub.spigotmc.org/javadocs/spigot/index.html?overview-summary.html</a><br>Spigot DOC: <a href="https://www.spigotmc.org/wiki/spigot-plugin-development/" target="_blank" rel="noopener">https://www.spigotmc.org/wiki/spigot-plugin-development/</a></p>
+<h3 id="Sponge"><a href="#Sponge" class="headerlink" title="Sponge"></a>Sponge</h3><p>Sponge官网: <a href="http://spongepowered.org/" target="_blank" rel="noopener">http://spongepowered.org/</a></p>
+<p>Sponge API: <a href="https://jd.spongepowered.org/index.html?overview-summary.html" target="_blank" rel="noopener">https://jd.spongepowered.org/index.html?overview-summary.html</a><br>Sponge DOC: <a href="https://docs.spongepowered.org/stable/zh-CN/" target="_blank" rel="noopener">https://docs.spongepowered.org/stable/zh-CN/</a></p>
+<h3 id="WetSponge-API"><a href="#WetSponge-API" class="headerlink" title="WetSponge API"></a>WetSponge API</h3><p>WetSponge项目地址: <a href="https://www.spigotmc.org/resources/wetsponge-api-simplifying-development.43311/" target="_blank" rel="noopener">https://www.spigotmc.org/resources/wetsponge-api-simplifying-development.43311/</a><br>WetSponge MCBBS搬运帖: <a href="http://www.mcbbs.net/thread-733158-1-1.html" target="_blank" rel="noopener">http://www.mcbbs.net/thread-733158-1-1.html</a></p>
+<p>WetSponge API: <a href="https://degoos.com/javadocs/WetSponge/index.html?overview-summary.html" target="_blank" rel="noopener">https://degoos.com/javadocs/WetSponge/index.html?overview-summary.html</a><br>WetSponge DOC: <a href="https://docs.degoos.com/" target="_blank" rel="noopener">https://docs.degoos.com/</a></p>
+<h3 id="BungeeCord"><a href="#BungeeCord" class="headerlink" title="BungeeCord"></a>BungeeCord</h3><p>BungeeCord API: <a href="https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/overview-summary.html" target="_blank" rel="noopener">https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/overview-summary.html</a><br>BungeeCord DOC: <a href="https://www.spigotmc.org/wiki/bungeecord-plugin-development/" target="_blank" rel="noopener">https://www.spigotmc.org/wiki/bungeecord-plugin-development/</a><br>BungeeCord 非官方DOC: <a href="http://www.mcbbs.net/thread-688889-1-1.html" target="_blank" rel="noopener">http://www.mcbbs.net/thread-688889-1-1.html</a></p>
+<h1 id="MineCraft-模组"><a href="#MineCraft-模组" class="headerlink" title="MineCraft 模组"></a>MineCraft 模组</h1><h2 id="官方API-教程DOC文档-1"><a href="#官方API-教程DOC文档-1" class="headerlink" title="官方API/教程DOC文档"></a>官方API/教程DOC文档</h2><h3 id="Forge"><a href="#Forge" class="headerlink" title="Forge"></a>Forge</h3><p>Forge官网: <a href="http://www.minecraftforge.net/forum/" target="_blank" rel="noopener">http://www.minecraftforge.net/forum/</a></p>
+<p>Forge API: 待收录<br>Forge DOC: <a href="https://mcforge.readthedocs.io/en/latest/" target="_blank" rel="noopener">https://mcforge.readthedocs.io/en/latest/</a></p>
+<h3 id="LiteLoader"><a href="#LiteLoader" class="headerlink" title="LiteLoader"></a>LiteLoader</h3><p>LiteLoader官网: <a href="http://www.liteloader.com/" target="_blank" rel="noopener">http://www.liteloader.com/</a></p>
+<p>LiteLoader API: 待收录<br>LiteLoader DOC: 待收录</p>
+<h2 id="独立模组内置API-教程DOC文档"><a href="#独立模组内置API-教程DOC文档" class="headerlink" title="独立模组内置API/教程DOC文档"></a>独立模组内置API/教程DOC文档</h2><h3 id="CustomNPCs"><a href="#CustomNPCs" class="headerlink" title="CustomNPCs"></a>CustomNPCs</h3><p>CustomNPCs官网: <a href="http://www.kodevelopment.nl/minecraft/customnpcs" target="_blank" rel="noopener">http://www.kodevelopment.nl/minecraft/customnpcs</a><br>CustomNPCs项目地址(CurseForge): <a href="https://minecraft.curseforge.com/projects/custom-npcs/" target="_blank" rel="noopener">https://minecraft.curseforge.com/projects/custom-npcs/</a><br>CustomNPCs MC百科: <a href="https://www.mcmod.cn/class/45.html" target="_blank" rel="noopener">https://www.mcmod.cn/class/45.html</a><br>CustomNPCs MCBBS搬运帖: <a href="http://www.mcbbs.net/thread-592910-1-1.html" target="_blank" rel="noopener">http://www.mcbbs.net/thread-592910-1-1.html</a><br>CustomNPCs脚本中文论坛: <a href="http://mcnpc.cn/s/" target="_blank" rel="noopener">http://mcnpc.cn/s/</a><br>CustomNPCs API: <a href="http://www.kodevelopment.nl/customnpcs/api/" target="_blank" rel="noopener">http://www.kodevelopment.nl/customnpcs/api/</a></p>
+<h3 id="Macro-Key-Bind"><a href="#Macro-Key-Bind" class="headerlink" title="Macro/Key Bind"></a>Macro/Key Bind</h3><p>Macro/Key Bind项目地址(MinecraftForum): <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1275039-macro-keybind-mod" target="_blank" rel="noopener">https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1275039-macro-keybind-mod</a><br>Macro/Key Bind项目地址(LiteLoader): <a href="http://www.liteloader.com/mod/macros" target="_blank" rel="noopener">http://www.liteloader.com/mod/macros</a><br>Macro/Key Bind项目地址(PlanetMinecraft): <a href="https://www.planetminecraft.com/mod/macro-keybind-mod/" target="_blank" rel="noopener">https://www.planetminecraft.com/mod/macro-keybind-mod/</a><br>Macro/Key Bind MCBBS搬运帖(带教程): <a href="http://www.mcbbs.net/thread-775087-1-1.html" target="_blank" rel="noopener">http://www.mcbbs.net/thread-775087-1-1.html</a><br>Macro/Key Bind 非官方DOC: <a href="https://mkb.gorlem.ml/hub" target="_blank" rel="noopener">https://mkb.gorlem.ml/hub</a></p>
+<h1 id="协作软件-推荐程度从高到低"><a href="#协作软件-推荐程度从高到低" class="headerlink" title="协作软件(推荐程度从高到低)"></a>协作软件(推荐程度从高到低)</h1><h2 id="Java-集成开发环境"><a href="#Java-集成开发环境" class="headerlink" title="Java 集成开发环境"></a>Java 集成开发环境</h2><p>IntelliJ IDEA: <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener">https://www.jetbrains.com/idea/</a><br>Eclipse: <a href="https://www.eclipse.org/" target="_blank" rel="noopener">https://www.eclipse.org/</a><br>NetBeans: <a href="https://netbeans.org/" target="_blank" rel="noopener">https://netbeans.org/</a></p>
+<h2 id="文本编辑器"><a href="#文本编辑器" class="headerlink" title="文本编辑器"></a>文本编辑器</h2><p>Sublime Text: <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">https://www.sublimetext.com/</a><br>Notepad++: <a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener">https://notepad-plus-plus.org/</a><br>VS Code: <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a><br>ATOM: <a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      </div>
+    
+  </div>
+</article>
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2019 漫步烟雨
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+  <script type="text/javascript" src="/js/clipboard-use.js"></script>  
+</body>
+</html>
