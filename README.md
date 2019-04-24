@@ -5,7 +5,7 @@
 
 创建于: 2019/04/24
 
-博客引擎: [Hexo(Website)](https://hexo.io/zh-cn/) [(Github)]()
+博客引擎: [smackdown(Github)](https://github.com/smackgg/hexo-theme-smackdown/) (个人魔改中...)
 
 博客主题: [Material(Github)](https://github.com/viosey/hexo-theme-material)
 
