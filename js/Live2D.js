@@ -9,12 +9,12 @@ $(document).mousemove(function(e){
 	var l2d = $('#live2d-widget');
 	if(l2d.length!=0){
 		if(l2dlc){
-			$("body").append('<div id="l2dTipBar" style="position: fixed; right: 50px; bottom: 160px; width: 200px;  z-index: 100000; opacity: 1; background: rgb(245,245,245); border: 2px solid #777; border-radius: 20px;opacity:0;text-align:center;padding:10px 5px 10px 5px"><font id="l2dTip" color="#222" size="2">测试</font></div>');
+			$("body").append('<div id="l2dTipBar" style="position: fixed; right: 50px; bottom: 160px; width: 200px;  z-index: 100000; opacity: 1; background: rgb(245,245,245); border: 2px solid #777; border-radius: 20px;opacity:0;text-align:center;padding:10px 5px 10px 5px;pointer-events:none;"><font id="l2dTip" color="#222" size="2">测试</font></div>');
 			l2d.stop().animate({bottom:'-100px',opacity:'0.5'},1000);
 			setInterval(checkTip,100);
 			l2dlc = false;
 		}
-		if(e.pageY>l2d.offset().top&&e.pageX>l2d.offset().left){
+		if(e.pageY>l2d.offset().top+50&&e.pageX>l2d.offset().left+100&&e.pageX<l2d.offset().left+200){
 			if(l2dlv){
 				msgTip(MsgList[Math.floor(Math.random()*MsgList.length)]);
 				l2dFade(l2d, true);
@@ -38,7 +38,7 @@ function checkTip(){
 	var l2dTip = $("#l2dTipBar")
 	if(TipTimer<30){
 		if(!Tiplv){
-			l2dTip.stop().animate({opacity:1},200);
+			l2dTip.stop().animate({opacity:0.8},200);
 			Tiplv=true;
 		}
 		TipTimer++;
