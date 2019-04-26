@@ -16,11 +16,19 @@ function CopyCode(e){
 		window.getSelection().addRange(range);
 		document.execCommand('copy');
 		window.getSelection().removeAllRanges();
-		$(".nav-tip")[0].innerText = '复制成功';
+		CopyOver('你要的代码复制好啦!')
 		cp.parentElement.removeChild(cp);
 	} catch (e) {
-		$(".nav-tip")[0].innerText = '复制失败';
+		CopyOver('噫?复制失败了?')
 	}
-	$(".nav-tip").fadeTo(0,1);
-	setTimeout(function(){$(".nav-tip").animate({opacity: 0},1000)},3000);
+}
+
+function CopyOver(msg){
+	if(device.mobile()){
+		$(".nav-tip")[0].innerText = msg;
+		$(".nav-tip").fadeTo(0,1);
+		setTimeout(function(){$(".nav-tip").stop().animate({opacity: 0},1000)},3000);
+	}else{
+		msgTip(msg);
+	}
 }
