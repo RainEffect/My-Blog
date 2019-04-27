@@ -54,7 +54,7 @@ function checkTip(){
 			$("body").append('<div id="l2dTipBar" style="position: fixed; right: 50px; bottom: 140px; width: 200px;  z-index: 100000; opacity: 1; background: rgb(245,245,245); border: 2px solid #777; border-radius: 20px;opacity:0;text-align:center;padding:10px 5px 10px 5px;pointer-events:none;"><font id="l2dTip" color="#222" size="2">测试</font></div>');
 			l2dFade(l2d, (localStorage.l2dShow==1));
 			if(localStorage.l2dShow==1){
-				if($("back-main").length==0){
+				if($("back-main").length!=0){
 					msgTip("哦噢...<br>你好像来到了不该来的地方呢...");
 				}
 			}
