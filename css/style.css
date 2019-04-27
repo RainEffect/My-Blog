@@ -143,6 +143,7 @@ body {
   color: #fff;
   -webkit-overflow-scrolling: touch;
   background-attachment: fixed;
+  cursor: url("/cursor/arrow.cur"), auto;
 }
 h1,
 h2,
@@ -168,6 +169,11 @@ a {
   outline-width: 0;
   color: #258fb8;
   outline: none;
+}
+a:hover,
+.switch-btn .tips-box .tips-inner li:hover,
+.switch-btn .icon:hover {
+  cursor: url("/cursor/link.cur"), auto;
 }
 .alignleft {
   float: left;
