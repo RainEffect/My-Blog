@@ -54,40 +54,39 @@ function checkTip(){
 			$("body").append('<div id="l2dTipBar" style="position: fixed; right: 50px; bottom: 140px; width: 200px;  z-index: 100000; opacity: 1; background: rgb(245,245,245); border: 2px solid #777; border-radius: 20px;opacity:0;text-align:center;padding:10px 5px 10px 5px;pointer-events:none;"><font id="l2dTip" color="#222" size="2">测试</font></div>');
 			l2dFade(l2d, (localStorage.l2dShow==1));
 			if(localStorage.l2dShow==1){
-				if($("back-main").length!=0){
-					msgTip("哦噢...<br>你好像来到了不该来的地方呢...");
+				if($("#back-main").length!=0){
+					msgTip("哦噢...<br>你好像来到了不该来的地方呢...",-20);
 				}
 			}
 		}else{
 			var l2dTip = $("#l2dTipBar")
-			if((!localStorage.l2dShow==1)||l2dlv==2){
-				if(TipTimer<30&&(l2dTip[0].style.opacity==0)){
+			if(TipTimer<30){
+				if(l2dTip[0].style.opacity==0){
+					l2dTip.stop().animate({opacity:0.8},200);
 					l2dFade(l2d, true);
 				}
-				if(TipTimer>=30&&(l2dTip[0].style.opacity==0.8)){
-					l2dFade(l2d, false);
-				}
-			}
-			if(TipTimer<30){
-				if(l2dTip[0].style.opacity==0) l2dTip.stop().animate({opacity:0.8},200);
 				TipTimer++;
 			}else{
-				if(l2dTip[0].style.opacity==0.8) l2dTip.stop().animate({opacity:0},300);
+				if(l2dTip[0].style.opacity==0.8){
+					if(!(localStorage.l2dShow==1) || l2dlv==2){l2dFade($('#live2d-widget'), false);}
+					l2dTip.stop().animate({opacity:0},300);
+				}
 			}
 		}
 	}
 }
 
 function msgTip(msg,time){
-	TipTimer=(time)?time:0;
-	$("#l2dTip")[0].innerHTML=msg;
+	if($("#l2dTip").length!=0){
+		TipTimer=(time)?time:0;
+		$("#l2dTip")[0].innerHTML=msg;
+	}
 }
 
 window.onfocus = function(){
 	if(localStorage.l2dShow==1){
 		msgTip("其他的东西好看吗?<br>所以,这就是你抛弃我的理由?");
-		l2dFade(l2d, true);
-		l2dlv=1;
+		l2dlv=0;
 	}
 }
 
