@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="漫步烟雨的个人博客">
 <meta property="og:description" content="基于Gitment引擎魔改运行这里是我的个人博客唯一的留言板，你可以打开我的 项目指定issus留言板 进行留言，或者在这里直接进行留言。在这里的所有留言信息都会被记录并同步到项目issus中。在博客中如有遇到任何使用疑问，可直接在此处进行留言，一般当天你就能收到我的回复。当然，你也可以在这里畅享欲言。 但注意：不要过多地在留言板处发布涉及个人信息的内容，否则所造成的财产损失/数据暴露，烟雨表示概">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-28T03:42:09.827Z">
+<meta property="og:updated_time" content="2019-04-28T13:51:20.479Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客留言板">
 <meta name="twitter:description" content="基于Gitment引擎魔改运行这里是我的个人博客唯一的留言板，你可以打开我的 项目指定issus留言板 进行留言，或者在这里直接进行留言。在这里的所有留言信息都会被记录并同步到项目issus中。在博客中如有遇到任何使用疑问，可直接在此处进行留言，一般当天你就能收到我的回复。当然，你也可以在这里畅享欲言。 但注意：不要过多地在留言板处发布涉及个人信息的内容，否则所造成的财产损失/数据暴露，烟雨表示概">
@@ -101,6 +101,8 @@
 				        
 							<li><a href="/archives">所有文章</a></li>
 				        
+							<li><a href="/msg_board">留言板</a></li>
+				        
 						</ul>
 					</nav>
 					<nav class="header-nav">
@@ -172,6 +174,8 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
+					<li><a href="/msg_board">留言板</a></li>
+		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -228,12 +232,8 @@
 <p>(PS: 当前留言板仍在测试中…)</p>
 <p><div id="Gitment"></div></p>
 <p><link rel="stylesheet" href="style.css"></p>
-<script src="gitment.js"></script>
-<script>
-var gitment = new Gitment({id: 'msg_board', owner: 'RainEffect', repo: 'raineffect.github.io', oauth: {client_id: '8a5b80a088e987089dab', client_secret: '733e7f373c76f626aa7de753482109f5f32a6109'}});
-gitment.render('Gitment');
-
-</script>
+<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
+<script>var gitment = new Gitment({id: 'msg_board', owner: 'RainEffect', repo: 'raineffect.github.io', oauth: {client_id: '8a5b80a088e987089dab', client_secret: '733e7f373c76f626aa7de753482109f5f32a6109'}});gitment.render('Gitment');</script>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       </div>
     
