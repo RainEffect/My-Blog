@@ -931,7 +931,7 @@ a:hover,
   visibility: hidden;
 }
 .article img {
-  max-width: 60%;
+  max-width: 100%;
 }
 @-webkit-keyframes cd-bounce-1 {
   0% {
